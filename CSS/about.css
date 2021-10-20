@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+@font-face {
+  font-family: Cocogoose;
+  src: url("../fonts/Cocogoose.otf");
+  font-weight: bold;
+}
+
+:root {
+  --textColor: #272a31;
+  --primaryColor: #d3d3d3;
+  --secondaryColor: #ec5242;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  display: none;
+}
+
+.media-nav {
+  display: none;
+}
+
+.logo {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+.logo-abt {
+  width: 300px;
+  height: 160px;
+}
+
+.line-top {
+  height: 1px;
+}
+
+.card-about {
+  height: 200px;
+  width: 300px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 30px;
+  background-color: var(--secondaryColor);
+}
+
+.img-abt {
+  width: 300px;
+  height: 200px;
+  opacity: 0.2;
+}
+
+.card-body {
+  margin-top: -150px;
+}
+
+.ft-logo {
+  width: 240px;
+  height: 140px;
+}
+
+.ft-text {
+  margin-left: 300px;
+  color: var(--primaryColor);
+}
+
+footer {
+  width: 100%;
+  margin-top: 80px;
+  background-color: var(--textColor);
+  margin-bottom: -17px;
+  margin-right: -15px;
+}
