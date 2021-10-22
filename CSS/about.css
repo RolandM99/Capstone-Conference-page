@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 @font-face {
-  font-family: Cocogoose;
-  src: url("../fonts/Cocogoose.otf");
+  font-family: "COCOGOOSE";
+  src: url('../fonts/COCOGOOSE/Cocogoose_trial.otf');
   font-weight: bold;
 }
 
@@ -13,16 +13,221 @@
 }
 
 html {
+  width: 100%;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 
+.main-page {
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-top {
+  width: 100%;
+  height: 850px;
+  background: rgba(158, 157, 157, 0.329);
+}
+
+.fa-bars {
+  position: fixed;
+  margin-left: 30px;
+  font-size: 30px;
+  margin-top: 30px;
+  color: var(--textColor);
+}
+
+.about-title {
+  height: 420px;
+  width: 100%;
+  color: var(--secondaryColor);
+  text-align: center;
+}
+
+.img-all {
+  width: 100%;
+  height: 420px;
+}
+
+.hello-abt {
+  margin-top: -250px;
+  font-size: 28px;
+  line-height: 32px;
+  margin-left: 12px;
+}
+
+.main-title {
+  font-size: 42px;
+  font-family: "COCOGOOSE", sans-serif;
+  line-height: 38px;
+  font-weight: bold;
+  margin-left: 12px;
+}
+
+.abt-text {
+  margin-top: 60px;
+  background-color: white;
+  border: 2px solid aliceblue;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.A-text {
+  font-family: 'Lato', sans-serif;
+  line-height: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+.abt-contact {
+  height: 40px;
+  margin-top: 50px;
+  text-align: center;
+  line-height: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+a.mail {
+  color: var(--textColor);
+}
+
+.msg {
+  margin-top: -10px;
+  margin-bottom: -1px;
+}
+
+.motto-title {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--textColor);
+  font-size: 24px;
+}
+
+.motto-title::after {
+  content: '';
+  height: 2px;
+  background-color: var(--secondaryColor);
+  position: absolute;
+  left: 50%;
+  width: 60px;
+  transform: translate(-50%, 50%);
+  margin-top: 35px;
+}
+
+.motto-text {
+  margin-left: 8px;
+  margin-bottom: 40px;
+  font-weight: 800;
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  width: 95%;
+}
+
+em {
+  background-color: var(--secondaryColor);
+}
+
+.logo-motto {
+  border: 1px solid rgb(177, 177, 177);
+  width: 280px;
+  margin: auto;
+}
+
+.last-title {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--textColor);
+  font-size: 24px;
+}
+
+.last-title::after {
+  content: '';
+  height: 2px;
+  background-color: var(--secondaryColor);
+  position: absolute;
+  left: 50%;
+  width: 60px;
+  transform: translate(-50%, 50%);
+  margin-top: 40px;
+}
+
+.last-text {
+  margin-left: 8px;
+  margin-bottom: 25px;
+  font-weight: 800;
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  width: 95%;
+}
+
+/* last project code */
+
+.threebar div {
+  width: 30px;
+  height: 4px;
+  background-color: var(--primaryColor);
+  margin: 6px;
+  transition: all 0.3s ease;
+}
+
+.threebar {
+  margin-top: 20px;
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  cursor: pointer;
+  margin-left: 35px;
+}
+
+.turn .line1 {
+  transform: rotate(-45deg) translate(-6px, 8px);
+}
+
+.turn .line2 {
+  opacity: 0;
+}
+
+.turn .line3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
 .navigation {
   display: none;
+}
+
+.nav-active {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  list-style-type: none;
+  display: block;
+  flex-direction: column;
+  background: linear-gradient(to right, #2f3032 0%, #f30 100%);
+}
+
+/* include */
+
+.word a {
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--primaryColor);
+  line-height: 80px;
+  margin-left: 100px;
+  margin-top: 50px;
 }
 
 .media-nav {
@@ -33,26 +238,34 @@ body {
   display: none;
 }
 
-.close {
-  display: none;
-}
-
 .logo-abt {
-  width: 300px;
+  width: 280px;
   height: 160px;
 }
 
 .line-top {
+  margin-top: 50px;
   height: 1px;
+}
+
+.col-sm-6 {
+  margin-top: 30px;
+}
+
+.two-activities {
+  height: 520px;
 }
 
 .card-about {
   height: 200px;
   width: 300px;
-  margin-left: 35px;
-  margin-right: 35px;
-  margin-top: 30px;
+  margin: auto;
   background-color: var(--secondaryColor);
+}
+
+.card-about:hover {
+  width: 305px;
+  height: 205px;
 }
 
 .img-abt {
@@ -61,24 +274,190 @@ body {
   opacity: 0.2;
 }
 
+.img-abt:hover {
+  width: 305px;
+  height: 205px;
+}
+
 .card-body {
   margin-top: -150px;
-}
-
-.ft-logo {
-  width: 240px;
-  height: 140px;
-}
-
-.ft-text {
-  margin-left: 300px;
+  font-family: 'COCOGOOSE', sans-serif;
+  text-align: center;
   color: var(--primaryColor);
 }
 
-footer {
-  width: 100%;
-  margin-top: 80px;
+.year-act {
+  font-size: 30px;
+}
+
+.card-text {
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.ft-logo {
+  width: 160px;
+  margin: auto;
+  height: 100px;
+}
+
+.ft-text {
+  font-family: 'Lato', sans-serif;
+  line-height: 18px;
+  font-weight: bold;
+  margin: auto;
+  color: var(--primaryColor);
+}
+
+.footer-logo {
   background-color: var(--textColor);
-  margin-bottom: -17px;
-  margin-right: -15px;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: -30px;
+    margin-left: 90px;
+  }
+
+  .threebar {
+    display: none;
+  }
+
+  .word a {
+    margin-top: -20px;
+    width: 80px;
+    height: 30px;
+  }
+
+  .navigation li a {
+    text-decoration: none;
+    color: var(--textColor);
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .word {
+    width: 80px;
+    height: 30px;
+    text-decoration: none;
+    color: var(--textColor);
+    opacity: 0.8;
+    margin-top: -55px;
+    margin-left: 8px;
+  }
+
+  #word1 {
+    color: var(--secondaryColor);
+  }
+
+  #word6 {
+    color: var(--secondaryColor);
+    border: 4px solid var(--secondaryColor);
+    padding: 6px;
+  }
+
+  .motto-text {
+    width: 62%;
+    text-align: center;
+    margin-left: 20%;
+    font-size: 20px;
+  }
+
+  .last-text {
+    font-size: 20px;
+  }
+
+  .nav-bar {
+    margin-top: 35px;
+    height: 80px;
+    position: fixed;
+    display: block;
+    background-color: white;
+    width: 100%;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+  }
+
+  .social_media {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    display: block;
+  }
+
+  .media-nav {
+    padding-left: 450px;
+    padding-top: 5px;
+    list-style-type: none;
+    margin: auto;
+    display: flex;
+    width: 350px;
+    justify-content: center;
+  }
+
+  .social_media li a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: var(--primaryColor);
+  }
+
+  .list-part li {
+    margin-top: -5px;
+    margin-left: 50px;
+  }
+
+  .menu-bar {
+    display: none;
+  }
+
+  .hello-abt {
+    margin-top: -190px;
+  }
+
+  .logo {
+    margin-left: 40px;
+    width: 23%;
+    display: block;
+  }
+
+  .all-logo {
+    width: 160px;
+  }
+
+  .about-top {
+    height: 800px;
+  }
+
+  .abt-text {
+    font-size: 20px;
+    width: 55%;
+    margin: auto;
+  }
+
+  .main-title {
+    width: 580px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .navigation {
+    margin-left: 300px;
+  }
+
+  .word {
+    margin-left: -80px;
+  }
 }
