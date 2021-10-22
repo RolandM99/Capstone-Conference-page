@@ -22,7 +22,7 @@
                 <li class="media_link"><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li class="media_link"><a href="https://twitter.com/ManfulMwez"><i class="fab fa-twitter"></i></a></li>
                 <li class="media_link"><a href="#">English</a></li>
-                <li class="media_link"><a href="#">My page</a></li>
+                <li class="media_link"><a href="#">Mypage</a></li>
                 <li class="media_link"><a href="#">Logout</a></li>
             </ul>
         </div>
@@ -31,25 +31,30 @@
                 <div class="logo">
                     <a href="index.html"><img src="../images/strongW-logo.png" class="all-logo" alt="logo"></a>
                 </div>
-                <div class="menu-bar">
-                  <i class="fas fa-bars"></i>
+              <!-- <div class="menu-bar">
+                 
                 </div>
+                <i class="fas fa-bars"></i>--> 
                 <ul class="navigation">
-                    <li class="word"><a href="about.html">About</a></li>
+                    <li class="word"><a id="word1" href="about.html">About</a></li>
                     <li class="word"><a href="#">Home</a></li>
                     <li class="word"><a href="#mission">Mission</a></li>
-                    <li class="word"><a href="partner">Partners</a></li>
-                    <li class="word"><a href="#team">SW.DRC</a></li>
+                    <li class="word"><a href="#partner">Partners</a></li>
+                    <li class="word"><a id="word6" href="#team">SW.DRC</a></li>
                 </ul>
-                <div class="close">
-                    <i class="fas fa-times"></i>
-                </div>
+                <div class="threebar">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                  </div>
+               <!--<a class="close"><i class="fas fa-times"></i></a>--> 
             </nav>
         </div>
     </header>
     <main class="main-class">
         <section class="present-head">
             <div class="all-motto">
+                <img class="img-all" src="/images/background.jpg" alt="background image">
                     <p class="motto">"A strong woman stands up for everybody else"</p>
                 <div class="summit">
                     <h1 class="summit-title">STRONG WOMMEN DRC Global Summit 2021</h1>
@@ -73,7 +78,7 @@
             <div class="main-container">
                 <h2 class="pro-title">Our Program</h2>
             </div>
-            <div class="container-program">
+            <div id="mission" class="container-program">
                 <div class="card">
                   
                       <div class="school-icon"><i class="fas fa-user-graduate"></i></div>
@@ -110,65 +115,13 @@
                 </div>
             </div>
         </section>
-        <section class="team-container">
+        <section id="team" class="team-container">
             <div class="our-team">
                 <h2 class="team-title">OUR TEAM</h2>
-                <!--JS implementation-->
-                <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <div class="col">
-                      <div class="card2">
-                        <img src="/images/mireille.jpg" class="card-img-top" alt="profil one">
-                        <div class="card-body">
-                          <h2 class="card-name">Mireille Muhigwa</h2>
-                          <p class="card-text1">Msc. International Devellopment and Globalisation</p>
-                            <p class="card-text2">This is a longer card with supporting text below as a 
-                              natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card2">
-                        <img src="/images/profil5.jpg" class="card-img-top" alt="profile two">
-                        <div class="card-body">
-                          <h2 class="card-name">Annicette Bahizire</h2>
-                          <p class="card-text1">Bsc. in International Law, Cuprys International University </p>
-                            <p class="card-text2">This is a longer card with supporting text below as a 
-                              natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
-                    </div>
-                   <!-- <div class="col">
-                      <div class="card2">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card2">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                        <div class="card2">
-                          <img src="..." class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                          </div>
-                        </div>
-                      </div>
-                  </div> -->
-               <!--end-->   
-            </div>
+               <div class="notre-team">
+               </div>
         </section>
-        <section class="partner-section">
+        <section id="partner" class="partner-section">
             <div class="our-partner">
                 <h2 class="partner-title">OUR PARTNER</h2>
                 <ul class="list-part">
@@ -186,5 +139,6 @@
             <p class="footer-text">2020 StrongWomen DRC.<br>Some Rights Reserved</p>
         </div>
     </footer>
+    <script src="JS/main.js"></script>
 </body>
 </html>

@@ -13,6 +13,8 @@
 }
 
 html {
+  width: 100%;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
@@ -21,6 +23,11 @@ body {
   margin-left: 0;
   width: 100%;
   font-family: 'Lato', sans-serif;
+}
+
+.main-class {
+  width: 100%;
+  overflow: hidden;
 }
 
 .present-head {
@@ -34,20 +41,23 @@ body {
   margin-left: 30px;
   font-size: 30px;
   margin-top: 30px;
-  color: #d3d3d3;
+  color: var(--textColor);
 }
 
 .all-motto {
-  background: url('/images/background.jpg');
   height: 420px;
   width: 100%;
-  background-repeat: no-repeat;
   color: var(--secondaryColor);
   text-align: left;
 }
 
+.img-all {
+  width: 100%;
+  height: 420px;
+}
+
 .motto {
-  padding-top: 150px;
+  margin-top: -290px;
   font-size: 28px;
   line-height: 32px;
   margin-left: 12px;
@@ -121,6 +131,10 @@ body {
   width: 100%;
   margin-top: 130px;
   grid-gap: 30px;
+}
+
+.team-container {
+  height: 1900px;
 }
 
 .card {
@@ -238,11 +252,11 @@ body {
 }
 
 .row {
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .card-img-top {
-  width: 140px;
+  width: 120px;
   margin: auto;
 }
 
@@ -270,15 +284,15 @@ body {
   font-weight: bold;
 }
 
-.card-text1::after {
-  position: absolute;
-  content: '';
-  width: 40px;
-  height: 4px;
-  margin-top: 30px;
-  left: 17%;
-  background-color: var(--primaryColor);
-  transform: translate(-50%, 50%);
+.line-txt {
+  font-size: 10px;
+  border: 4px black;
+  width: 50px;
+  color: black;
+}
+
+hr:not([size]) {
+  height: 3px;
 }
 
 .card-text2 {
@@ -288,8 +302,65 @@ body {
   line-height: 17px;
 }
 
+/* last project code */
+
+.threebar div {
+  width: 30px;
+  height: 4px;
+  background-color: var(--primaryColor);
+  margin: 6px;
+  transition: all 0.3s ease;
+}
+
+.threebar {
+  margin-top: 20px;
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  cursor: pointer;
+  margin-left: 35px;
+}
+
+.turn .line1 {
+  transform: rotate(-45deg) translate(-6px, 8px);
+}
+
+.turn .line2 {
+  opacity: 0;
+}
+
+.turn .line3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
 .navigation {
   display: none;
+}
+
+/* last project code */
+
+/* to implement with class declared in JS */
+.nav-active {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  list-style-type: none;
+  display: block;
+  flex-direction: column;
+  background: linear-gradient(to right, #2f3032 0%, #f30 100%);
+}
+
+/* include */
+
+.word a {
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--primaryColor);
+  line-height: 80px;
+  width: auto;
+  margin-left: 50px;
+  margin-top: 50px;
 }
 
 .media-nav {
@@ -297,10 +368,6 @@ body {
 }
 
 .logo {
-  display: none;
-}
-
-.close {
   display: none;
 }
 
@@ -379,65 +446,245 @@ body {
 
 @media screen and (min-width: 768px) {
   .all-motto {
-    background: url('/images/background.jpg');
-    background-repeat: no-repeat;
     height: 420px;
   }
 
+  .threebar {
+    display: none;
+  }
+
   .motto {
-    font-size: 36px;
-    margin-left: 80px;
-    width: 80%;
-    padding-top: 170px;
+    font-size: 34px;
+    margin-left: 90px;
+    width: 70%;
+    padding-top: 90px;
+  }
+
+  .summit-title {
+    font-size: 45px;
+    line-height: 46px;
+    margin-top: -12px;
+    width: 62%;
   }
 
   .summit {
+    display: block;
     margin-left: 80px;
-    width: 90%;
-    margin-top: 40px;
+    width: 65%;
+    margin-top: 30px;
   }
 
   .navigation {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    width: 60%;
-    margin: auto;
-    top: -20px;
-    padding-left: 234px;
+    width: 50%;
+    margin-top: -30px;
+    margin-left: 320px;
+  }
+
+  .word a {
+    margin-top: -20px;
+    width: 80px;
+    height: 30px;
   }
 
   .navigation li a {
     text-decoration: none;
+    color: var(--textColor);
+    font-size: 20px;
+    font-weight: bold;
   }
 
   .word {
+    width: 80px;
+    height: 30px;
     text-decoration: none;
     color: var(--textColor);
     opacity: 0.8;
-    margin-top: -60px;
-    margin-left: 30px;
+    margin-top: -55px;
+    margin-left: 20px;
   }
 
-  .menu {
+  #word1 {
+    color: var(--secondaryColor);
+  }
+
+  #word6 {
+    color: var(--secondaryColor);
+    border: 4px solid var(--secondaryColor);
+    padding: 6px;
+  }
+
+  .nav-bar {
+    margin-top: 35px;
+    height: 80px;
     position: fixed;
+    display: block;
     background-color: white;
     width: 100%;
   }
 
-  .media-nav {
+  .block-detail {
+    width: 65%;
+    margin-left: 80px;
+  }
+
+  .block {
+    width: 60%;
+    font-size: 20px;
+  }
+
+  .pro-title::after {
+    margin-top: 45px;
+  }
+
+  .container-program {
+    display: grid;
+    grid-template-columns: repeat(5, 18%);
+    grid-gap: 0;
+    margin-left: 30px;
+  }
+
+  .card {
+    flex-direction: column;
+    height: 300px;
+  }
+
+  .main-program {
+    height: 700px;
+  }
+
+  .join {
     display: none;
+  }
+
+  .card-subtitle {
+    margin: auto;
+    font-size: 24px;
+  }
+
+  .school-icon {
+    margin: auto;
+  }
+
+  .forum-icon {
+    margin: auto;
+  }
+
+  .invest-icon {
+    margin: auto;
+  }
+
+  .love-icon {
+    margin: auto;
+  }
+
+  .donation-icon {
+    margin: auto;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+  }
+
+  .social_media {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    display: block;
+  }
+
+  .media-nav {
+    padding-left: 450px;
+    padding-top: 5px;
+    list-style-type: none;
+    margin: auto;
+    display: flex;
+    width: 350px;
+    justify-content: center;
+  }
+
+  .social_media li a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: var(--primaryColor);
+  }
+
+  .list-part li {
+    margin-top: -5px;
+    margin-left: 50px;
+  }
+
+  .partner-section {
+    height: 280px;
   }
 
   .menu-bar {
     display: none;
   }
 
+  .notre-team {
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    width: auto;
+    margin-left: -24px;
+  }
+
+  .team-container {
+    height: 800px;
+  }
+
+  .row {
+    width: 400px;
+    flex-direction: column;
+    font-size: 15px;
+  }
+
+  .card2 {
+    flex-direction: row;
+  }
+
+  .card-body {
+    width: 200px;
+  }
+
+  .card-name {
+    width: 200px;
+  }
+
+  .card-text1 {
+    width: 250px;
+  }
+
+  .card-text2 {
+    width: 230px;
+  }
+
   .logo {
+    margin-left: 40px;
+    width: 23%;
     display: block;
   }
 
   .all-logo {
-    width: 200px;
+    width: 160px;
+  }
+
+  i.fas.fa-bars {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .notre-team {
+    width: auto;
+  }
+
+  .row {
+    width: auto;
+    margin: auto;
   }
 }
