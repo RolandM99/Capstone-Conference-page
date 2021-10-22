@@ -4,7 +4,7 @@
 
 >Building a personalized Captone-project to review the things learned so as to show an understanding and mastery of fundamentals learned.
 # Mobile Version
-![screenshot](./mobileVersion.jpg)
+![screenshot](./mobileView.jpg)
 
 # Desktop Version
 ![screenshot](./desktop.PNG)
