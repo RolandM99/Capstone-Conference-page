@@ -22,33 +22,33 @@ menuOff();
 
 const ourTeam = [
   {
-    image: '/images/mireille.jpg',
+    image: 'images/mireille.jpg',
     name: 'Mireille Muhigwa',
     degree: 'Msc. International Devellopment and Globalisation',
     about: 'This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
   },
   {
-    image: '/images/profil2.jpg',
+    image: 'images/profil2.jpg',
     name: 'Jeanette M',
     degree: 'Phd. International Relation',
     about: 'This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
 
   },
   {
-    image: '/images/profil3.jpg',
+    image: 'images/profil3.jpg',
     name: 'Yao Chang',
     degree: 'Lecturer at UNIKIN',
     about: 'This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
 
   },
   {
-    image: '/images/profil4.jpg',
+    image: 'images/profil4.jpg',
     name: 'Dr. Denis MUkwege',
     degree: 'Nobel Price 2018',
     about: 'This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
   },
   {
-    image: '/images/profil5.jpg',
+    image: 'images/profil5.jpg',
     name: 'Anicette Bahizire',
     degree: 'Bsc. International Law',
     about: 'This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
@@ -56,7 +56,7 @@ const ourTeam = [
   },
 ];
 
-function dataTeam(n) {
+const dataTeam = (n) => {
   sectionTeam.innerHTML += ` <div class="row row-cols-1 row-cols-md-2 g-4">
   <div class="col">
     <div class="card2">
@@ -69,7 +69,7 @@ function dataTeam(n) {
       </div>
     </div>
   </div>`;
-}
+};
 
 for (let i = 0; i < ourTeam.length; i += 1) {
   dataTeam(i);
