@@ -464,7 +464,11 @@ hr:not([size]) {
     font-size: 45px;
     line-height: 46px;
     margin-top: -12px;
-    width: 62%;
+    width: 94%;
+  }
+
+  .present-head {
+    height: 900px;
   }
 
   .summit {
@@ -480,7 +484,7 @@ hr:not([size]) {
     justify-content: space-around;
     width: 50%;
     margin-top: -30px;
-    margin-left: 320px;
+    margin-left: 200px;
   }
 
   .word a {
@@ -531,7 +535,7 @@ hr:not([size]) {
   }
 
   .block {
-    width: 60%;
+    width: 90%;
     font-size: 20px;
   }
 
@@ -598,7 +602,7 @@ hr:not([size]) {
   }
 
   .media-nav {
-    padding-left: 450px;
+    padding-left: 430px;
     padding-top: 5px;
     list-style-type: none;
     margin: auto;
@@ -683,8 +687,51 @@ hr:not([size]) {
     width: auto;
   }
 
+  .navigation {
+    margin-left: 290px;
+  }
+
+  .logo {
+    margin-left: 130px;
+  }
+
+  .container-program {
+    margin-left: 56px;
+  }
+
   .row {
     width: auto;
     margin: auto;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+  .logo {
+    margin-left: 200px;
+    width: auto;
+  }
+
+  .navigation {
+    margin-left: 450px;
+  }
+
+  .motto {
+    margin-left: 180px;
+  }
+
+  .summit {
+    margin-left: 170px;
+  }
+
+  .block-detail {
+    margin-left: 180px;
+  }
+
+  .media-nav {
+    margin-left: 625px;
+  }
+
+  .container-program {
+    margin-left: 80px;
   }
 }

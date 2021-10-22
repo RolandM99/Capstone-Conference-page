@@ -324,7 +324,7 @@ em {
     justify-content: space-around;
     width: 50%;
     margin-top: -30px;
-    margin-left: 90px;
+    margin-left: 160px;
   }
 
   .threebar {
@@ -398,7 +398,7 @@ em {
   }
 
   .media-nav {
-    padding-left: 450px;
+    padding-left: 400px;
     padding-top: 5px;
     list-style-type: none;
     margin: auto;
@@ -457,7 +457,42 @@ em {
     margin-left: 300px;
   }
 
+  .logo {
+    margin-left: 130px;
+  }
+
   .word {
     margin-left: -80px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+  .logo {
+    margin-left: 200px;
+    width: auto;
+  }
+
+  .navigation {
+    margin-left: 450px;
+  }
+
+  .motto {
+    margin-left: 180px;
+  }
+
+  .summit {
+    margin-left: 170px;
+  }
+
+  .block-detail {
+    margin-left: 180px;
+  }
+
+  .media-nav {
+    margin-left: 625px;
+  }
+
+  .container-program {
+    margin-left: 80px;
   }
 }
