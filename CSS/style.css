@@ -14,11 +14,9 @@
 
 html {
   width: 100%;
-  padding: 0;
 }
 
 body {
-  padding: 0;
   margin: auto;
   width: auto;
   font-family: 'Lato', sans-serif;
@@ -252,6 +250,7 @@ body {
 
 .row {
   margin-top: 10px;
+  width: auto;
 }
 
 .card-img-top {
@@ -452,11 +451,20 @@ hr:not([size]) {
     display: none;
   }
 
+  .img-all {
+    margin-top: 90px;
+    height: 470px;
+  }
+
   .motto {
     font-size: 34px;
     margin-left: 90px;
     width: 70%;
-    padding-top: 90px;
+    padding-top: 20px;
+  }
+
+  .word a {
+    margin-left: -30px;
   }
 
   .summit-title {
@@ -480,16 +488,7 @@ hr:not([size]) {
   .navigation {
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
-    width: 50%;
-    margin-top: -30px;
-    margin-left: 200px;
-  }
-
-  .word a {
-    margin-top: -20px;
-    width: 80px;
-    height: 30px;
+    justify-content: center;
   }
 
   .navigation li a {
@@ -505,8 +504,6 @@ hr:not([size]) {
     text-decoration: none;
     color: var(--textColor);
     opacity: 0.8;
-    margin-top: -55px;
-    margin-left: 20px;
   }
 
   #word1 {
@@ -520,10 +517,11 @@ hr:not([size]) {
   }
 
   .nav-bar {
+    display: flex;
     margin-top: 35px;
     height: 80px;
     position: fixed;
-    display: block;
+    justify-content: center;
     background-color: white;
     width: 100%;
   }
@@ -534,6 +532,7 @@ hr:not([size]) {
   }
 
   .block {
+    margin-top: 170px;
     width: 90%;
     font-size: 20px;
   }
@@ -601,13 +600,13 @@ hr:not([size]) {
   }
 
   .media-nav {
-    padding-left: 430px;
     padding-top: 5px;
+    align-items: center;
     list-style-type: none;
     margin: auto;
     display: flex;
-    width: 350px;
-    justify-content: center;
+    width: 94%;
+    justify-content: right;
   }
 
   .social_media li a {
@@ -632,8 +631,8 @@ hr:not([size]) {
   .notre-team {
     display: grid;
     grid-template-columns: repeat(2, 4fr);
-    width: auto;
-    margin-left: -24px;
+    width: 80%;
+    margin: auto;
   }
 
   .team-container {
@@ -644,10 +643,12 @@ hr:not([size]) {
     width: 400px;
     flex-direction: column;
     font-size: 15px;
+    align-items: center;
   }
 
   .card2 {
     flex-direction: row;
+    margin-left: -180px;
   }
 
   .card-body {
@@ -667,8 +668,8 @@ hr:not([size]) {
   }
 
   .logo {
-    margin-left: 40px;
-    width: 23%;
+    margin-left: 20px;
+    width: 33%;
     display: block;
   }
 
@@ -681,60 +682,37 @@ hr:not([size]) {
   }
 }
 
-@media screen and (min-width: 900px) {
-  .notre-team {
-    width: auto;
-  }
-
-  .navigation {
-    margin-left: 290px;
-  }
-
-  .media-nav {
-    margin-left: 320px;
-  }
-
-  .logo {
-    margin-left: 130px;
-  }
-
-  .container-program {
-    margin-left: 56px;
-  }
-
-  .row {
-    width: auto;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1600px) {
-  .logo {
-    margin-left: 200px;
-    width: auto;
-  }
-
-  .navigation {
-    margin-left: 450px;
-  }
-
+@media screen and (min-width: 1024px) {
   .motto {
-    margin-left: 180px;
+    margin-left: 140px;
+  }
+
+  .logo {
+    width: 550px;
   }
 
   .summit {
-    margin-left: 170px;
+    margin-left: 135px;
   }
 
   .block-detail {
-    margin-left: 180px;
+    margin-left: 140px;
   }
 
   .media-nav {
-    margin-left: 655px;
+    margin: auto;
+    width: 83%;
+    justify-content: right;
+    display: flex;
   }
 
   .container-program {
     margin-left: 80px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .logo {
+    width: 1680px;
   }
 }
