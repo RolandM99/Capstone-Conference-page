@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  margin: auto;
+  justify-content: center;
   width: auto;
   font-family: 'Lato', sans-serif;
 }
