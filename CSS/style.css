@@ -15,19 +15,18 @@
 html {
   width: 100%;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 body {
   padding: 0;
-  margin-left: 0;
-  width: 100%;
+  margin: auto;
+  width: auto;
   font-family: 'Lato', sans-serif;
 }
 
 .main-class {
+  overflow-x: hidden;
   width: 100%;
-  overflow: hidden;
 }
 
 .present-head {
@@ -691,6 +690,10 @@ hr:not([size]) {
     margin-left: 290px;
   }
 
+  .media-nav {
+    margin-left: 320px;
+  }
+
   .logo {
     margin-left: 130px;
   }
@@ -728,7 +731,7 @@ hr:not([size]) {
   }
 
   .media-nav {
-    margin-left: 625px;
+    margin-left: 655px;
   }
 
   .container-program {

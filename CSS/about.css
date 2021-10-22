@@ -398,7 +398,7 @@ em {
   }
 
   .media-nav {
-    padding-left: 400px;
+    padding-left: 390px;
     padding-top: 5px;
     list-style-type: none;
     margin: auto;
@@ -455,6 +455,10 @@ em {
 @media screen and (min-width: 1000px) {
   .navigation {
     margin-left: 300px;
+  }
+
+  .media-nav {
+    margin-left: 358px;
   }
 
   .logo {
