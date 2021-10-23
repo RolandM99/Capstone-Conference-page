@@ -2,7 +2,7 @@
 
 # Capstone Project 1 (SW DRC Conference Page)
 
->Building a personalized Captone-project to review the things learned so as to show an understanding and mastery of fundamentals learned.
+>Building a personalized Capstone-project to review the things learned so as to show an understanding and mastery of fundamentals learned.
 # Mobile Version
 ![screenshot](./mobileView.png)
 
