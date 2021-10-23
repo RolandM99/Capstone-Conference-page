@@ -71,7 +71,7 @@ body {
 }
 
 .abt-text {
-  margin-top: 60px;
+  margin-top: 140px;
   background-color: white;
   border: 2px solid aliceblue;
   margin-left: 12px;
@@ -79,6 +79,7 @@ body {
 }
 
 .A-text {
+  margin-top: 70px;
   font-family: 'Lato', sans-serif;
   line-height: 22px;
   font-weight: bold;
@@ -321,10 +322,7 @@ em {
   .navigation {
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
-    width: 50%;
-    margin-top: -30px;
-    margin-left: 160px;
+    justify-content: center;
   }
 
   .threebar {
@@ -332,9 +330,11 @@ em {
   }
 
   .word a {
-    margin-top: -20px;
-    width: 80px;
-    height: 30px;
+    margin-left: -30px;
+  }
+
+  .img-all {
+    margin-top: 50px;
   }
 
   .navigation li a {
@@ -350,8 +350,6 @@ em {
     text-decoration: none;
     color: var(--textColor);
     opacity: 0.8;
-    margin-top: -55px;
-    margin-left: 8px;
   }
 
   #word1 {
@@ -376,10 +374,11 @@ em {
   }
 
   .nav-bar {
+    display: flex;
     margin-top: 35px;
     height: 80px;
     position: fixed;
-    display: block;
+    justify-content: center;
     background-color: white;
     width: 100%;
   }
@@ -398,13 +397,12 @@ em {
   }
 
   .media-nav {
-    padding-left: 390px;
     padding-top: 5px;
     list-style-type: none;
     margin: auto;
     display: flex;
-    width: 350px;
-    justify-content: center;
+    width: 700px;
+    justify-content: right;
   }
 
   .social_media li a {
@@ -427,8 +425,8 @@ em {
   }
 
   .logo {
-    margin-left: 40px;
-    width: 23%;
+    margin-left: 20px;
+    width: 33%;
     display: block;
   }
 
@@ -452,51 +450,25 @@ em {
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .navigation {
-    margin-left: 300px;
-  }
-
+@media screen and (min-width: 1024px) {
   .media-nav {
-    margin-left: 358px;
+    margin: auto;
+    width: 83%;
+    justify-content: right;
+    display: flex;
   }
 
   .logo {
-    margin-left: 130px;
-  }
-
-  .word {
-    margin-left: -80px;
+    width: 550px;
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .logo {
-    margin-left: 200px;
-    width: auto;
-  }
-
-  .navigation {
-    margin-left: 450px;
-  }
-
-  .motto {
-    margin-left: 180px;
-  }
-
-  .summit {
-    margin-left: 170px;
-  }
-
-  .block-detail {
-    margin-left: 180px;
+    width: 1680px;
   }
 
   .media-nav {
     margin-left: 625px;
-  }
-
-  .container-program {
-    margin-left: 80px;
   }
 }
