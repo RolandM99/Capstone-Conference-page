@@ -19,7 +19,9 @@
 
 [Live Demo Link](https://rolandm99.github.io/Capstone-Conference-page/)
 
-## Loom Video  **A video which explain the while project**
+## Loom Video 
+
+[Documentation video Link](https://www.loom.com/share/d5ed599bfd22478ca4adec1b27b6c181)
 
 ## Getting Started
 
