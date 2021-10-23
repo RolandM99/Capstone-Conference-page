@@ -1,59 +1,42 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Capstone Project 1 (SW DRC Conference Page)
 
-> One paragraph statement about the project.
+>Building a personalized Captone-project to review the things learned so as to show an understanding and mastery of fundamentals learned.
+# Mobile Version
+![screenshot](./mobileView.png)
 
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+# Desktop Version
+![screenshot](./desktop.PNG)
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Major languages : CSS | HTML | JAVASCRIPT
+- Frameworks : Bootstrap
+- Technologies used : Git, Github, Linters
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://rolandm99.github.io/Capstone-Conference-page/)
 
+## Loom Video 
+
+[Documentation video Link](https://www.loom.com/share/d5ed599bfd22478ca4adec1b27b6c181)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+To get a local copy up and running follow these simple example steps
 
+1. First clone the project with the command $ git clone https://github.com/RolandM99/Capstone-Conference_page.git
+2. Then open index.html in your browser
+3. [optional] You can even fork the project
 
-To get a local copy up and running follow these simple example steps.
+👤 **Roland Manful Mweze**
 
-### Prerequisites
+- GitHub: [Rolandm99](https://github.com/RolandM99)
+- Twitter: [@Manfulmwez](https://twitter.com/ManfulMwez)
+- LinkedIn: [Roland N. MWEZE](https://www.linkedin.com/in/roland-n-mweze-8b1045189/)
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -67,9 +50,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Inspiration : Original design idea by **Cindy Shin in Behance**
 
 ## 📝 License
 
