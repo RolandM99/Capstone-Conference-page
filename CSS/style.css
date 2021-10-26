@@ -130,8 +130,40 @@ body {
   grid-gap: 30px;
 }
 
-.team-container {
-  height: 1900px;
+.btn {
+  border: 1px solid var(--secondaryColor);
+  display: flex;
+  justify-content: center;
+  border-radius: 0;
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.show {
+  display: flex;
+}
+
+.row {
+  height: 280px;
+  margin-top: 10px;
+  width: auto;
+}
+
+.notre-team .row {
+  width: 100%;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.notre-team .row:first-child,
+.notre-team .row:nth-child(2) {
+  display: flex;
+}
+
+.notre-team .row.show {
+  display: flex;
 }
 
 .card {
@@ -227,7 +259,7 @@ body {
 }
 
 .our-team {
-  height: 920px;
+  position: static;
 }
 
 .team-title {
@@ -246,11 +278,6 @@ body {
   left: 50%;
   background-color: var(--secondaryColor);
   transform: translate(-50%, 50%);
-}
-
-.row {
-  margin-top: 10px;
-  width: auto;
 }
 
 .card-img-top {
@@ -443,6 +470,10 @@ hr:not([size]) {
 }
 
 @media screen and (min-width: 768px) {
+  .our-team {
+    position: relative;
+  }
+
   .all-motto {
     height: 420px;
   }
@@ -630,13 +661,12 @@ hr:not([size]) {
 
   .notre-team {
     display: grid;
+    grid-gap: 10px;
+    grid-auto-rows: 250px;
+    justify-content: center;
     grid-template-columns: repeat(2, 4fr);
     width: 80%;
     margin: auto;
-  }
-
-  .team-container {
-    height: 800px;
   }
 
   .row {
@@ -647,8 +677,8 @@ hr:not([size]) {
   }
 
   .card2 {
+    justify-content: center;
     flex-direction: row;
-    margin-left: -180px;
   }
 
   .card-body {
@@ -664,7 +694,7 @@ hr:not([size]) {
   }
 
   .card-text2 {
-    width: 230px;
+    width: 210px;
   }
 
   .logo {
